@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "meme_dimension_mod:block/meme_dimension_portal_ew"
+    },
+    "axis=x": {
+      "model": "meme_dimension_mod:block/meme_dimension_portal_ns"
+    }
+  }
+}

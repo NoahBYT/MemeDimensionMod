@@ -1,0 +1,24 @@
+{
+  "group": "meme_dimension_mod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  2",
+    " 4 ",
+    "6  "
+  ],
+  "key": {
+    "2": {
+      "item": "meme_dimension_mod:slimecicle_ball"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "6": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "meme_dimension_mod:the_slimecicle_stick",
+    "count": 1
+  }
+}

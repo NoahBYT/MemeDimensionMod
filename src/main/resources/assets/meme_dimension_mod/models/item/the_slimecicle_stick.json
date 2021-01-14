@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "meme_dimension_mod:items/the_slimecicle_stick"
+  }
+}

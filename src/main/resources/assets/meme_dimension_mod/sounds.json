@@ -1,0 +1,20 @@
+{
+  "ohh_dream": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "meme_dimension_mod:oh_dream_sound_effect_georgenotfound",
+        "stream": false
+      }
+    ]
+  },
+  "george_scream": {
+    "category": "hostile",
+    "sounds": [
+      {
+        "name": "meme_dimension_mod:georgenotfound_scream",
+        "stream": false
+      }
+    ]
+  }
+}

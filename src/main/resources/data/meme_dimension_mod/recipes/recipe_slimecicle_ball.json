@@ -1,0 +1,42 @@
+{
+  "group": "meme_dimension_mod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "meme_dimension_mod:slimecicle_drops"
+    },
+    "1": {
+      "item": "meme_dimension_mod:slimecicle_drops"
+    },
+    "2": {
+      "item": "meme_dimension_mod:slimecicle_drops"
+    },
+    "3": {
+      "item": "meme_dimension_mod:slimecicle_drops"
+    },
+    "4": {
+      "item": "meme_dimension_mod:slimecicle_drops"
+    },
+    "5": {
+      "item": "meme_dimension_mod:slimecicle_drops"
+    },
+    "6": {
+      "item": "meme_dimension_mod:slimecicle_drops"
+    },
+    "7": {
+      "item": "meme_dimension_mod:slimecicle_drops"
+    },
+    "8": {
+      "item": "meme_dimension_mod:slimecicle_drops"
+    }
+  },
+  "result": {
+    "item": "meme_dimension_mod:slimecicle_ball",
+    "count": 1
+  }
+}

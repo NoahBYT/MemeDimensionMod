@@ -1,0 +1,16 @@
+{
+  "group": "meme_dimension_mod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "meme_dimension_mod:slimecicle_ball"
+    }
+  },
+  "result": {
+    "item": "meme_dimension_mod:slimecicle_drops",
+    "count": 9
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "meme_dimension_mod:items/slimecicle_chestplate"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "meme_dimension_mod:blocks/slimecicle_block",
+    "particle": "meme_dimension_mod:blocks/slimecicle_block"
+  }
+}
