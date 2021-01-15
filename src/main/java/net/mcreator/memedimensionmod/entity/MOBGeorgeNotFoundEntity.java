@@ -61,7 +61,6 @@ import net.minecraft.client.renderer.entity.layers.BipedArmorLayer;
 import net.minecraft.client.renderer.entity.BipedRenderer;
 
 import net.mcreator.memedimensionmod.itemgroup.SlimecicleItemGroup;
-import net.mcreator.memedimensionmod.item.EmooraldArmorItem;
 import net.mcreator.memedimensionmod.MemeDimensionModModElements;
 
 @MemeDimensionModModElements.ModElement.Tag
@@ -85,7 +84,12 @@ public class MOBGeorgeNotFoundEntity extends MemeDimensionModModElements.ModElem
 
 	@SubscribeEvent
 	public void addFeatureToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(EntityClassification.MONSTER).add(new MobSpawnInfo.Spawners(entity, 20, 4, 4));
+		boolean biomeCriteria = false;
+		if (new ResourceLocation("meme_dimension_mod:meme_biome").equals(event.getName()))
+			biomeCriteria = true;
+		if (!biomeCriteria)
+			return;
+		event.getSpawns().getSpawner(EntityClassification.MONSTER).add(new MobSpawnInfo.Spawners(entity, 5, 1, 1));
 	}
 
 	@Override
@@ -130,7 +134,6 @@ public class MOBGeorgeNotFoundEntity extends MemeDimensionModModElements.ModElem
 			setCustomName(new StringTextComponent("GeorgeNotFound"));
 			setCustomNameVisible(true);
 			this.setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(Items.DIAMOND_SWORD, (int) (1)));
-			this.setItemStackToSlot(EquipmentSlotType.OFFHAND, new ItemStack(EmooraldArmorItem.body, (int) (1)));
 		}
 
 		@Override
@@ -158,6 +161,11 @@ public class MOBGeorgeNotFoundEntity extends MemeDimensionModModElements.ModElem
 			return CreatureAttribute.UNDEFINED;
 		}
 
+		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
+			super.dropSpecialItems(source, looting, recentlyHitIn);
+			this.entityDropItem(new ItemStack(Items.DIAMOND_SWORD, (int) (1)));
+		}
+
 		@Override
 		public net.minecraft.util.SoundEvent getAmbientSound() {
 			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("meme_dimension_mod:ohh_dream"));
@@ -171,6 +179,13 @@ public class MOBGeorgeNotFoundEntity extends MemeDimensionModModElements.ModElem
 		@Override
 		public net.minecraft.util.SoundEvent getDeathSound() {
 			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
+		}
+
+		@Override
+		public boolean attackEntityFrom(DamageSource source, float amount) {
+			if (source == DamageSource.LIGHTNING_BOLT)
+				return false;
+			return super.attackEntityFrom(source, amount);
 		}
 
 		@Override

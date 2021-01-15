@@ -1,0 +1,11 @@
+{
+  "_fv": 15,
+  "_type": "tab",
+  "definition": {
+    "name": "Meme Blocks",
+    "icon": {
+      "value": "Blocks.MAGMA"
+    },
+    "showSearch": true
+  }
+}

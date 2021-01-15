@@ -12,47 +12,42 @@ public static class Modelzombie extends EntityModel<Entity> {
 	private final ModelRenderer leftLeg;
 
 	public Modelzombie() {
-		textureWidth = 64;
-		textureHeight = 32;
+		textureWidth = 192;
+		textureHeight = 96;
 
 		body = new ModelRenderer(this);
 		body.setRotationPoint(0.0F, 0.0F, 0.0F);
-		body.setTextureOffset(16, 16).addBox(-4.0F, 0.0F, -2.0F, 8.0F, 12.0F, 4.0F, 0.0F, false);
+		body.setTextureOffset(48, 48).addBox(-12.0F, -48.0F, -6.0F, 24.0F, 36.0F, 12.0F, 0.0F, false);
 
 		head = new ModelRenderer(this);
-		head.setRotationPoint(0.0F, 0.0F, 0.0F);
+		head.setRotationPoint(0.0F, -48.0F, 0.0F);
 		body.addChild(head);
-		setRotationAngle(head, 0.0524F, -0.1745F, 0.0F);
-		head.setTextureOffset(0, 0).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 0.0F, false);
-		head.setTextureOffset(32, 0).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 0.5F, false);
+		head.setTextureOffset(0, 0).addBox(-12.0F, -24.0F, -12.0F, 24.0F, 24.0F, 24.0F, 0.0F, false);
+		head.setTextureOffset(96, 0).addBox(-12.0F, -24.0F, -12.0F, 24.0F, 24.0F, 24.0F, 0.5F, false);
 
 		rightArm = new ModelRenderer(this);
-		rightArm.setRotationPoint(-5.0F, 2.0F, 0.0F);
+		rightArm.setRotationPoint(-5.0F, -46.0F, 0.0F);
 		body.addChild(rightArm);
-		setRotationAngle(rightArm, -1.3963F, -0.0873F, 0.0F);
-		rightArm.setTextureOffset(40, 16).addBox(-3.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.0F, false);
+		rightArm.setTextureOffset(120, 48).addBox(-19.0F, -2.0F, -6.0F, 12.0F, 36.0F, 12.0F, 0.0F, false);
 
 		rightItem = new ModelRenderer(this);
-		rightItem.setRotationPoint(-1.0F, 7.0F, 1.0F);
+		rightItem.setRotationPoint(-1.0F, 55.0F, 1.0F);
 		rightArm.addChild(rightItem);
 
 		leftArm = new ModelRenderer(this);
-		leftArm.setRotationPoint(5.0F, 2.0F, 0.0F);
+		leftArm.setRotationPoint(5.0F, -46.0F, 0.0F);
 		body.addChild(leftArm);
-		setRotationAngle(leftArm, -1.309F, 0.0873F, 0.0F);
-		leftArm.setTextureOffset(40, 16).addBox(-1.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.0F, true);
+		leftArm.setTextureOffset(120, 48).addBox(7.0F, -2.0F, -6.0F, 12.0F, 36.0F, 12.0F, 0.0F, true);
 
 		rightLeg = new ModelRenderer(this);
-		rightLeg.setRotationPoint(-1.9F, 12.0F, 0.0F);
+		rightLeg.setRotationPoint(-1.9F, -12.0F, 0.0F);
 		body.addChild(rightLeg);
-		setRotationAngle(rightLeg, -0.4363F, 0.0F, 0.0873F);
-		rightLeg.setTextureOffset(0, 16).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.0F, false);
+		rightLeg.setTextureOffset(0, 48).addBox(-10.1F, 0.0F, -6.0F, 12.0F, 36.0F, 12.0F, 0.0F, false);
 
 		leftLeg = new ModelRenderer(this);
-		leftLeg.setRotationPoint(1.9F, 12.0F, 0.0F);
+		leftLeg.setRotationPoint(1.9F, -12.0F, 0.0F);
 		body.addChild(leftLeg);
-		setRotationAngle(leftLeg, 0.3491F, 0.0F, 0.0F);
-		leftLeg.setTextureOffset(0, 16).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.0F, true);
+		leftLeg.setTextureOffset(0, 48).addBox(-1.9F, 0.0F, -6.0F, 12.0F, 36.0F, 12.0F, 0.0F, true);
 	}
 
 	@Override

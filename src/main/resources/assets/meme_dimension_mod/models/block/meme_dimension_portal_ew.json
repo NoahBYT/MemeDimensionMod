@@ -1,7 +1,7 @@
 {
   "textures": {
-    "particle": "meme_dimension_mod:blocks/portal",
-    "portal": "meme_dimension_mod:blocks/portal"
+    "particle": "meme_dimension_mod:blocks/meme_portal_animation",
+    "portal": "meme_dimension_mod:blocks/meme_portal_animation"
   },
   "elements": [
     {

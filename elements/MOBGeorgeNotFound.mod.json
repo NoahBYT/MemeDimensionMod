@@ -30,7 +30,7 @@
       "value": "Items.DIAMOND_SWORD"
     },
     "equipmentOffHand": {
-      "value": "CUSTOM:EmooraldArmor.body"
+      "value": ""
     },
     "equipmentHelmet": {
       "value": ""
@@ -68,11 +68,11 @@
     "immuneToFallDamage": false,
     "immuneToCactus": false,
     "immuneToDrowning": false,
-    "immuneToLightning": false,
+    "immuneToLightning": true,
     "immuneToPotions": false,
     "immuneToPlayer": false,
     "mobDrop": {
-      "value": ""
+      "value": "Items.DIAMOND_SWORD"
     },
     "livingSound": {
       "value": "CUSTOM:ohh_dream"
@@ -113,11 +113,15 @@
     "rangedItemType": "Default item",
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
-    "spawningProbability": 20,
+    "spawningProbability": 5,
     "mobSpawningType": "monster",
-    "minNumberOfMobsPerGroup": 4,
-    "maxNumberOfMobsPerGroup": 4,
-    "restrictionBiomes": [],
+    "minNumberOfMobsPerGroup": 1,
+    "maxNumberOfMobsPerGroup": 1,
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:MemeBiome"
+      }
+    ],
     "spawnInDungeons": false
   }
 }

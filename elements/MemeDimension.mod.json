@@ -4,15 +4,15 @@
   "definition": {
     "biomesInDimension": [
       {
-        "value": "birch_forest"
+        "value": "CUSTOM:MemeBiome"
       }
     ],
     "worldGenType": "Normal world gen",
     "mainFillerBlock": {
-      "value": "Blocks.DIAMOND_BLOCK"
+      "value": "Blocks.STONE#0"
     },
     "fluidBlock": {
-      "value": "Blocks.FLOWING_LAVA"
+      "value": "Blocks.FLOWING_WATER"
     },
     "airColor": {
       "value": -6736897,
@@ -35,12 +35,12 @@
     "portalSound": {
       "value": ""
     },
-    "igniterName": "Holy Bucket",
+    "igniterName": "Holy Water Bucket",
     "igniterTab": {
       "value": "TOOLS"
     },
     "texture": "holy_water_bucket",
-    "portalTexture": "portal",
+    "portalTexture": "meme_portal_animation",
     "enablePortal": true
   }
 }

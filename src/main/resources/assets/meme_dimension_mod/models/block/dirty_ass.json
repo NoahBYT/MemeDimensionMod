@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "meme_dimension_mod:blocks/dirt",
+    "up": "meme_dimension_mod:blocks/dirt",
+    "north": "meme_dimension_mod:blocks/dirt",
+    "east": "meme_dimension_mod:blocks/dirt",
+    "south": "meme_dimension_mod:blocks/dirt",
+    "west": "meme_dimension_mod:blocks/dirt",
+    "particle": "meme_dimension_mod:blocks/dirt"
+  }
+}

@@ -231,6 +231,136 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "boss_dream"
+    },
+    {
+      "name": "Heaven",
+      "type": "biome",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "heavenbiome"
+    },
+    {
+      "name": "HeavenCastle",
+      "type": "structure",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "heaven_castle"
+    },
+    {
+      "name": "MemeBlocks",
+      "type": "tab",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "meme_blocks"
+    },
+    {
+      "name": "DirtyAss",
+      "type": "block",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dirty_ass"
+    },
+    {
+      "name": "GrassyAss",
+      "type": "block",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "grassy_ass"
+    },
+    {
+      "name": "MemeBiome",
+      "type": "biome",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "meme_biome"
+    },
+    {
+      "name": "HeavenGrass",
+      "type": "block",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "heaven_grass"
+    },
+    {
+      "name": "HeavenDirt",
+      "type": "block",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "heaven_dirt"
+    },
+    {
+      "name": "GrassyAssBlockAdded",
+      "type": "procedure",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "grassy_ass_block_added",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HeavenGrassBlockAdded",
+      "type": "procedure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "heaven_grass_block_added",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -259,19 +389,26 @@
       "entity.meme_dimension_mod.mob_george_not_found": "GeorgeNotFound",
       "item.meme_dimension_mod.slimecicle_drops": "Slimecicle Drops",
       "item.meme_dimension_mod.the_slick": "The Slick",
-      "entity.meme_dimension_mod.boss_dream": "Dream",
       "itemGroup.tabslimecicle": "Slimecicle",
       "advancements.emeralds_armor_advancement.descr": "Make emerald armor.",
-      "item.meme_dimension_mod.emoorald_armor_helmet": "Emerald Helmet",
+      "block.meme_dimension_mod.heaven_dirt": "Heaven Dirt",
       "item.meme_dimension_mod.emoorald_armor_leggings": "Emerald Leggings",
+      "item.meme_dimension_mod.slimecicle_ball": "Slimecicle Ball",
+      "block.meme_dimension_mod.heaven_grass": "Heaven Grass",
+      "biome.meme_dimension_mod.heavenbiome": "Heaven",
+      "entity.meme_dimension_mod.boss_dream": "Dream",
+      "itemGroup.tabmeme_blocks": "Meme Blocks",
+      "item.meme_dimension_mod.emoorald_armor_helmet": "Emerald Helmet",
+      "block.meme_dimension_mod.grassy_ass": "Grassy Ass",
       "item.meme_dimension_mod.boss_dream_spawn_egg": "Dream Spawn Egg",
       "block.meme_dimension_mod.slimecicle_block": "Slimecicle Block",
       "item.meme_dimension_mod.mob_george_not_found_spawn_egg": "GeorgeNotFound Spawn Egg",
-      "item.meme_dimension_mod.slimecicle_ball": "Slimecicle Ball",
+      "biome.meme_dimension_mod.meme_biome": "Meme",
+      "block.meme_dimension_mod.dirty_ass": "Dirty Ass",
       "item.meme_dimension_mod.the_slimecicle_stick": "The Slimecicle Stick",
       "subtitles.george_scream": "",
       "item.meme_dimension_mod.emoorald_armor_chestplate": "Emerald Chestplate",
-      "item.meme_dimension_mod.meme_dimension": "Holy Bucket",
+      "item.meme_dimension_mod.meme_dimension": "Holy Water Bucket",
       "item.meme_dimension_mod.emoorald_armor_boots": "Emerald Boots"
     }
   },

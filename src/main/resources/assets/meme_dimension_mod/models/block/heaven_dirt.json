@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "meme_dimension_mod:blocks/heaven_dirt",
+    "up": "meme_dimension_mod:blocks/heaven_dirt",
+    "north": "meme_dimension_mod:blocks/heaven_dirt",
+    "east": "meme_dimension_mod:blocks/heaven_dirt",
+    "south": "meme_dimension_mod:blocks/heaven_dirt",
+    "west": "meme_dimension_mod:blocks/heaven_dirt",
+    "particle": "meme_dimension_mod:blocks/heaven_dirt"
+  }
+}

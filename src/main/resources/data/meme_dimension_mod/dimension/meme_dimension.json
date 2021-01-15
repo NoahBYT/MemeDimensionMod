@@ -36,7 +36,7 @@
       },
       "biomes": [
         {
-          "biome": "birch_forest",
+          "biome": "meme_dimension_mod:meme_biome",
           "parameters": {
             "altitude": 0,
             "temperature": 0,
@@ -54,10 +54,10 @@
       "sea_level": 63,
       "disable_mob_generation": true,
       "default_block": {
-        "Name": "minecraft:diamond_block"
+        "Name": "minecraft:stone"
       },
       "default_fluid": {
-        "Name": "minecraft:lava",
+        "Name": "minecraft:water",
         "Properties": {
           "level": "0"
         }
