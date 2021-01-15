@@ -416,8 +416,8 @@
     "modid": "meme_dimension_mod",
     "modName": "Meme Dimension Mod",
     "version": "1.0.0",
-    "author": "Rohan, MCreator",
-    "websiteURL": "https://mcreator.net",
+    "author": "NoahB",
+    "websiteURL": "https://www.youtube.com/NoahB",
     "license": "Academic Free License v3.0",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
@@ -426,6 +426,7 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.16.4",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.memedimensionmod",
     "lockBaseModFiles": false
   },
