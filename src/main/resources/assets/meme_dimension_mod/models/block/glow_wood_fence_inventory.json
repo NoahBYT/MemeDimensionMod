@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_inventory",
+  "textures": {
+    "texture": "meme_dimension_mod:blocks/glow_wood_planks",
+    "particle": "meme_dimension_mod:blocks/glow_wood_planks"
+  }
+}

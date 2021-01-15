@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "meme_dimension_mod:blocks/glow_sapling",
+    "particle": "meme_dimension_mod:blocks/glow_sapling"
+  }
+}

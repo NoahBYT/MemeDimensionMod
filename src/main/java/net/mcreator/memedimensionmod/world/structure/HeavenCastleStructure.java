@@ -53,7 +53,7 @@ public class HeavenCastleStructure extends MemeDimensionModModElements.ModElemen
 					dimensionCriteria = true;
 				if (!dimensionCriteria)
 					return false;
-				if ((random.nextInt(1000000) + 1) <= 700) {
+				if ((random.nextInt(1000000) + 1) <= 800) {
 					int count = random.nextInt(1) + 1;
 					for (int a = 0; a < count; a++) {
 						int i = ci + random.nextInt(16);

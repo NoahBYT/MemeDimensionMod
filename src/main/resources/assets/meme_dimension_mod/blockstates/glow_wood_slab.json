@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "meme_dimension_mod:block/glow_wood_slab"
+    },
+    "type=top": {
+      "model": "meme_dimension_mod:block/glow_wood_slab_top"
+    },
+    "type=double": {
+      "model": "meme_dimension_mod:block/glow_wood_slab_full"
+    }
+  }
+}

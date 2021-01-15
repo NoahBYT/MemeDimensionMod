@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "meme_dimension_mod:blocks/glow_wood_planks",
+    "particle": "meme_dimension_mod:blocks/glow_wood_planks"
+  }
+}

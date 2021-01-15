@@ -16,11 +16,14 @@ import net.minecraft.world.gen.placement.AtSurfaceWithExtraConfig;
 import net.minecraft.world.gen.foliageplacer.BlobFoliagePlacer;
 import net.minecraft.world.gen.feature.structure.StructureFeatures;
 import net.minecraft.world.gen.feature.TwoLayerFeature;
+import net.minecraft.world.gen.feature.SphereReplaceConfig;
 import net.minecraft.world.gen.feature.Features;
 import net.minecraft.world.gen.feature.FeatureSpread;
 import net.minecraft.world.gen.feature.Feature;
+import net.minecraft.world.gen.feature.BlockClusterFeatureConfig;
 import net.minecraft.world.gen.feature.BaseTreeFeatureConfig;
 import net.minecraft.world.gen.blockstateprovider.SimpleBlockStateProvider;
+import net.minecraft.world.gen.blockplacer.SimpleBlockPlacer;
 import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.biome.MobSpawnInfo;
 import net.minecraft.world.biome.DefaultBiomeFeatures;
@@ -35,6 +38,8 @@ import net.minecraft.block.Blocks;
 import net.mcreator.memedimensionmod.block.HeavenGrassBlock;
 import net.mcreator.memedimensionmod.block.HeavenDirtBlock;
 import net.mcreator.memedimensionmod.MemeDimensionModModElements;
+
+import com.google.common.collect.ImmutableList;
 
 @MemeDimensionModModElements.ModElement.Tag
 public class HeavenBiome extends MemeDimensionModModElements.ModElement {
@@ -58,19 +63,44 @@ public class HeavenBiome extends MemeDimensionModModElements.ModElement {
 				biomeGenerationSettings.withStructure(StructureFeatures.VILLAGE_SNOWY);
 				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
 						Feature.TREE
-								.withConfiguration((new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(Blocks.OAK_LOG.getDefaultState()),
-										new SimpleBlockStateProvider(Blocks.OAK_LEAVES.getDefaultState()),
-										new BlobFoliagePlacer(FeatureSpread.func_242252_a(2), FeatureSpread.func_242252_a(0), 3),
-										new StraightTrunkPlacer(4, 2, 0), new TwoLayerFeature(1, 0, 1))).setIgnoreVines().build())
+								.withConfiguration(
+										(new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(Blocks.STRIPPED_SPRUCE_LOG.getDefaultState()),
+												new SimpleBlockStateProvider(Blocks.GLOWSTONE.getDefaultState()),
+												new BlobFoliagePlacer(FeatureSpread.func_242252_a(2), FeatureSpread.func_242252_a(0), 3),
+												new StraightTrunkPlacer(6, 2, 0), new TwoLayerFeature(1, 0, 1))).setIgnoreVines().build())
 								.withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
-								.withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(3, 0.1F, 1))));
+								.withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(10, 0.1F, 1))));
 				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
 						Feature.RANDOM_PATCH.withConfiguration(Features.Configs.GRASS_PATCH_CONFIG).withPlacement(Features.Placements.PATCH_PLACEMENT)
 								.withPlacement(Placement.COUNT_NOISE.configure(new NoiseDependant(-0.8D, 5, 2))));
 				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
 						Feature.FLOWER.withConfiguration(Features.Configs.NORMAL_FLOWER_CONFIG)
 								.withPlacement(Features.Placements.VEGETATION_PLACEMENT).withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
-								.func_242731_b(6));
+								.func_242731_b(15));
+				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
+						Feature.RANDOM_PATCH.withConfiguration(
+								(new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(Blocks.BROWN_MUSHROOM.getDefaultState()),
+										SimpleBlockPlacer.PLACER)).tries(6).func_227317_b_().build()));
+				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
+						Feature.RANDOM_PATCH.withConfiguration(
+								(new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(Blocks.RED_MUSHROOM.getDefaultState()),
+										SimpleBlockPlacer.PLACER)).tries(6).func_227317_b_().build()));
+				biomeGenerationSettings
+						.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
+								Feature.DISK
+										.withConfiguration(
+												new SphereReplaceConfig(Blocks.SAND.getDefaultState(), FeatureSpread.func_242253_a(2, 4), 2,
+														ImmutableList.of(HeavenGrassBlock.block.getDefaultState(),
+																HeavenDirtBlock.block.getDefaultState())))
+										.withPlacement(Features.Placements.SEAGRASS_DISK_PLACEMENT).func_242731_b(3));
+				biomeGenerationSettings
+						.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
+								Feature.DISK
+										.withConfiguration(
+												new SphereReplaceConfig(Blocks.GRAVEL.getDefaultState(), FeatureSpread.func_242253_a(2, 3), 2,
+														ImmutableList.of(HeavenGrassBlock.block.getDefaultState(),
+																HeavenDirtBlock.block.getDefaultState())))
+										.withPlacement(Features.Placements.SEAGRASS_DISK_PLACEMENT).func_242731_b(5));
 				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();
 				biome = new Biome.Builder().precipitation(Biome.RainType.RAIN).category(Biome.Category.PLAINS).depth(0.1f).scale(0.1f)
 						.temperature(0.5f).downfall(0.5f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())

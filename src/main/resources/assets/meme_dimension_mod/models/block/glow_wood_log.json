@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "meme_dimension_mod:blocks/glow_wood_log_top",
+    "up": "meme_dimension_mod:blocks/glow_wood_log_top",
+    "north": "meme_dimension_mod:blocks/glow_wood_log_side",
+    "east": "meme_dimension_mod:blocks/glow_wood_log_side",
+    "south": "meme_dimension_mod:blocks/glow_wood_log_side",
+    "west": "meme_dimension_mod:blocks/glow_wood_log_side",
+    "particle": "meme_dimension_mod:blocks/glow_wood_log_top"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "group": "meme_dimension_mod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "meme_dimension_mod:glow_wood_log"
+    },
+    "1": {
+      "item": "meme_dimension_mod:glow_wood_log"
+    },
+    "2": {
+      "item": "meme_dimension_mod:glow_wood_log"
+    },
+    "3": {
+      "item": "meme_dimension_mod:glow_wood_log"
+    }
+  },
+  "result": {
+    "item": "meme_dimension_mod:glow_wood_wood",
+    "count": 3
+  }
+}

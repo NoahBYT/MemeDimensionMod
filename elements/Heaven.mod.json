@@ -31,22 +31,22 @@
     "biomeDictionaryTypes": [],
     "grassPerChunk": 2,
     "seagrassPerChunk": 0,
-    "flowersPerChunk": 6,
-    "mushroomsPerChunk": 0,
+    "flowersPerChunk": 15,
+    "mushroomsPerChunk": 6,
     "bigMushroomsChunk": 0,
-    "sandPatchesPerChunk": 0,
-    "gravelPatchesPerChunk": 0,
+    "sandPatchesPerChunk": 3,
+    "gravelPatchesPerChunk": 5,
     "reedsPerChunk": 0,
     "cactiPerChunk": 0,
-    "treesPerChunk": 3,
+    "treesPerChunk": 10,
     "vanillaTreeType": "Default",
-    "treeType": 0,
-    "minHeight": 7,
+    "treeType": 1,
+    "minHeight": 6,
     "treeStem": {
-      "value": ""
+      "value": "Blocks.STRIPPED_SPRUCE_LOG"
     },
     "treeBranch": {
-      "value": ""
+      "value": "Blocks.GLOWSTONE"
     },
     "treeVines": {
       "value": ""

@@ -1,0 +1,13 @@
+{
+  "group": "meme_dimension_mod",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:glow_wood_log"
+    }
+  ],
+  "result": {
+    "item": "meme_dimension_mod:glow_wood_planks",
+    "count": 4
+  }
+}

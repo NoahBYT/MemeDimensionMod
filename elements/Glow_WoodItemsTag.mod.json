@@ -1,0 +1,19 @@
+{
+  "_fv": 15,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Glow_WoodWood"
+      },
+      {
+        "value": "CUSTOM:Glow_WoodLog"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "name": "glow_wood_log",
+    "namespace": "forge"
+  }
+}

@@ -361,6 +361,250 @@
           }
         ]
       }
+    },
+    {
+      "name": "Glow_WoodWood",
+      "type": "block",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "glow_wood_wood"
+    },
+    {
+      "name": "Glow_WoodLog",
+      "type": "block",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "glow_wood_log"
+    },
+    {
+      "name": "Glow_WoodPlanks",
+      "type": "block",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "glow_wood_planks"
+    },
+    {
+      "name": "Glow_WoodStairs",
+      "type": "block",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "glow_wood_stairs"
+    },
+    {
+      "name": "Glow_WoodSlab",
+      "type": "block",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "glow_wood_slab"
+    },
+    {
+      "name": "Glow_WoodFence",
+      "type": "block",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "glow_wood_fence"
+    },
+    {
+      "name": "Glow_WoodFenceGate",
+      "type": "block",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "glow_wood_fence_gate"
+    },
+    {
+      "name": "Glow_WoodItemsTag",
+      "type": "tag",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "glow_wood_items_tag"
+    },
+    {
+      "name": "Glow_WoodWoodRecipe",
+      "type": "recipe",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "glow_wood_wood_recipe"
+    },
+    {
+      "name": "Glow_WoodPlanksRecipe",
+      "type": "recipe",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "glow_wood_planks_recipe"
+    },
+    {
+      "name": "Glow_WoodStairsRecipe",
+      "type": "recipe",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "glow_wood_stairs_recipe"
+    },
+    {
+      "name": "Glow_WoodSlabRecipe",
+      "type": "recipe",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "glow_wood_slab_recipe"
+    },
+    {
+      "name": "Glow_WoodFenceRecipe",
+      "type": "recipe",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "glow_wood_fence_recipe"
+    },
+    {
+      "name": "Glow_WoodFenceGateRecipe",
+      "type": "recipe",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "glow_wood_fence_gate_recipe"
+    },
+    {
+      "name": "Glow_WoodStickRecipe",
+      "type": "recipe",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "glow_wood_stick_recipe"
+    },
+    {
+      "name": "GlowTree",
+      "type": "structure",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "glow_tree"
+    },
+    {
+      "name": "GlowSaplingUpdateTick",
+      "type": "procedure",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "glow_sapling_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GlowSaplingPlantAdded",
+      "type": "procedure",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "glow_sapling_plant_added",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GlowSapling",
+      "type": "plant",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "glow_sapling"
+    },
+    {
+      "name": "GlowSaplingPlantRightClicked",
+      "type": "procedure",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "glow_sapling_plant_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -389,25 +633,33 @@
       "entity.meme_dimension_mod.mob_george_not_found": "GeorgeNotFound",
       "item.meme_dimension_mod.slimecicle_drops": "Slimecicle Drops",
       "item.meme_dimension_mod.the_slick": "The Slick",
+      "block.meme_dimension_mod.glow_wood_wood": "Glow Wood",
       "itemGroup.tabslimecicle": "Slimecicle",
       "advancements.emeralds_armor_advancement.descr": "Make emerald armor.",
+      "block.meme_dimension_mod.glow_wood_slab": "Glow Slab",
+      "block.meme_dimension_mod.glow_sapling": "Glow Sapling",
       "block.meme_dimension_mod.heaven_dirt": "Heaven Dirt",
       "item.meme_dimension_mod.emoorald_armor_leggings": "Emerald Leggings",
       "item.meme_dimension_mod.slimecicle_ball": "Slimecicle Ball",
       "block.meme_dimension_mod.heaven_grass": "Heaven Grass",
       "biome.meme_dimension_mod.heavenbiome": "Heaven",
+      "block.meme_dimension_mod.glow_wood_fence_gate": "Glow Fence Gate",
       "entity.meme_dimension_mod.boss_dream": "Dream",
+      "block.meme_dimension_mod.glow_wood_fence": "Glow Fence",
       "itemGroup.tabmeme_blocks": "Meme Blocks",
       "item.meme_dimension_mod.emoorald_armor_helmet": "Emerald Helmet",
       "block.meme_dimension_mod.grassy_ass": "Grassy Ass",
       "item.meme_dimension_mod.boss_dream_spawn_egg": "Dream Spawn Egg",
       "block.meme_dimension_mod.slimecicle_block": "Slimecicle Block",
       "item.meme_dimension_mod.mob_george_not_found_spawn_egg": "GeorgeNotFound Spawn Egg",
+      "block.meme_dimension_mod.glow_wood_log": "Glow Log",
+      "block.meme_dimension_mod.glow_wood_planks": "Glow Planks",
       "biome.meme_dimension_mod.meme_biome": "Meme",
       "block.meme_dimension_mod.dirty_ass": "Dirty Ass",
       "item.meme_dimension_mod.the_slimecicle_stick": "The Slimecicle Stick",
       "subtitles.george_scream": "",
       "item.meme_dimension_mod.emoorald_armor_chestplate": "Emerald Chestplate",
+      "block.meme_dimension_mod.glow_wood_stairs": "Glow Stairs",
       "item.meme_dimension_mod.meme_dimension": "Holy Water Bucket",
       "item.meme_dimension_mod.emoorald_armor_boots": "Emerald Boots"
     }
